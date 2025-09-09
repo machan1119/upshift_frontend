@@ -13,7 +13,7 @@ module.exports = {
         accent: "#17B26A",
         headline: '#111111',
         dark: '#26272B',
-        light: "##FBFBFD"
+        light: "#FBFBFD"
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

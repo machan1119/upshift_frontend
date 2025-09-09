@@ -307,3 +307,32 @@ main::before {
 	display: none;
   }
 }
+
+
+/* Pages About us */
+.about-us-hero::after{
+  content: "";
+  position:absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  top: -6px;
+  right: -6px;
+  left: -6px;
+  bottom: -6px;
+  background: conic-gradient(86.5deg, transparent, #CAEEFF, transparent);
+}
+
+.about-us-hero::before{
+  content: "";
+  position:absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  mix-blend-mode: overlay;
+  background: linear-gradient(225deg, #10CFF5 0%, #FFFFFF00 100%);
+  z-index: 2;
+}
