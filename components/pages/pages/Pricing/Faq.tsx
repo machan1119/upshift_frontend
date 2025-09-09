@@ -54,7 +54,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="py-16 px-6 bg-faq-background">
+    <section className="py-16 px-6 bg-gray-50 w-full border-b-[1px] border-b-[#7F7F7F1A]">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-faq-text">
           Frequently asked questions
@@ -64,21 +64,43 @@ export default function Faq() {
           {faqData.map((faq) => (
             <div
               key={faq.id}
-              className="bg-faq-item border border-[#FBFBFB] rounded-lg px-6 py-2 transition-all duration-200 hover:shadow-sm"
+              className="bg-faq-item border border-[#7F7F7F1A] rounded-lg p-4 transition-all duration-200 hover:shadow-sm"
             >
               <button
                 onClick={() => toggleItem(faq.id)}
-                className="w-full text-left font-medium text-black py-6 text-lg flex items-center justify-between focus:outline-none"
+                className="w-full text-left font-medium text-black text-lg flex items-center justify-between focus:outline-none"
               >
                 {faq.question}
                 <p className="w-5 h-5 text-[#11111199] text-[36px] transition-transform duration-300">
-                  {openItem == faq.id ? "+" : "-"}
+                  {openItem == faq.id ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 640"
+                      className="w-4 h-4"
+                    >
+                      <path
+                        fill="black"
+                        d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 640"
+                      className="w-4 h-4"
+                    >
+                      <path
+                        fill="black"
+                        d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z"
+                      />
+                    </svg>
+                  )}
                 </p>
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ease-out ${
                   openItem === faq.id
-                    ? "max-h-96 opacity-100 pb-6"
+                    ? "max-h-96 opacity-100 py-4"
                     : "max-h-0 opacity-0 pb-0"
                 }`}
               >

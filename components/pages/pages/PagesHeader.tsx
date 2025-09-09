@@ -58,7 +58,7 @@ const PagesHeader = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center justify-center">
             <Link
-              href="#"
+              href="/pages/get_a_quote/"
               className={`w-full text-[16px] leading-[16px] font-medium shadow-[0_2px_4px_0_rgba(0,10,31,0.2),_inset_0_6px_3px_-1px_rgba(255,255,255,0.2)] bg-primary px-[20.8px] py-[11.2px] rounded-[12px] text-white`}
             >
               Get a quote
