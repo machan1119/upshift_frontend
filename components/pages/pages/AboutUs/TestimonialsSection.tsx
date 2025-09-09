@@ -116,6 +116,21 @@ const TestimonialsSection = () => {
           <h2 className="text-[#111111] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
             What our users said about Upshift
           </h2>
+          <div className="py-[2px] pr-2 pl-[2px] bg-[#DCFAE6] rounded-[8px] flex gap-2 items-center">
+            <Image
+              src="/images/About-Us-Trustpilot.webp"
+              width={20}
+              height={20}
+              alt="start"
+              className="w-5 h-5 rounded-[4px]"
+            />
+            <p className="text-[14px] leading-[19.6px] font-medium text-[#095C37]">
+              4.9/5.0 on
+            </p>
+            <p className="text-[14px] leading-[19.6px] font-medium text-[#16B364]">
+              Trustpilot
+            </p>
+          </div>
         </div>
         <div className="relative">
           <div className="grid grid-cols-3 gap-6 z-[2]">
