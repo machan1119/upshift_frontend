@@ -131,7 +131,7 @@ const TestimonialsSection = () => {
           </div>
           <div className="z-[100] absolute w-full min-h-[200px] bottom-0 bg-transparent bg-gradient-to-b from-white/0 to-[#FBFBFD] bg-[auto_200px] bg-no-repeat bg-bottom"></div>
         </div>
-        <div className="hidden md:flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <Link
             href="#"
             className={`w-max text-[16px] leading-[16px] font-medium shadow-[0_2px_4px_0_rgba(0,10,31,0.2),_inset_0_6px_3px_-1px_rgba(255,255,255,0.2)] bg-black px-[20.8px] py-[11.2px] rounded-[12px] text-white`}

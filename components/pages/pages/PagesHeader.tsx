@@ -18,7 +18,7 @@ const PagesHeader = () => {
   }, []);
 
   const menuItems = [
-    { name: "About Us", href: "/pages/about-us/" },
+    { name: "About Us", href: "/pages/about_us/" },
     { name: "Services", href: "/pages/services/" },
     { name: "Team", href: "/pages/team/" },
     { name: "Pricing", href: "/pages/pricing/" },

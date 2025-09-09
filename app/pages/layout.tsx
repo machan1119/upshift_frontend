@@ -1,3 +1,4 @@
+import { Helper } from "@/components/Helper";
 import PagesFooter from "@/components/pages/pages/PagesFooter";
 import PagesHeader from "@/components/pages/pages/PagesHeader";
 
@@ -9,6 +10,7 @@ export default function PagesLayout({
   return (
     <main className="min-h-screen relative">
       <PagesHeader />
+      <Helper />
       {children}
       <PagesFooter />
     </main>
