@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export function Helper() {
   return (
     <div className="ui-link-helper">
@@ -72,26 +70,5 @@ export function Helper() {
         </span>
       </a>
     </div>
-    // <div className=" fixed right-0 top-[calc(50vh-111px)] flex flex-col bg-white w-[45px] border-l-[5px] border-[#EAEAEA] z-[99]">
-    //   <Link
-    //     href=""
-    //     className="relative group flex justify-center h-[44px] transition-all duration-300 ease-in"
-    //   >
-    //     <svg
-    //       viewBox="0 0 48 48"
-    //       className="w-[22px] h-[20px]"
-    //       xmlns="http://www.w3.org/2000/svg"
-    //     >
-    //       <path
-    //         d="M32 24.34a6 6 0 11-4 0V14a2 2 0 014 0v10.34zm-12-.68V34a2 2 0 01-4 0V23.66a6 6 0 114 0zM12 4h24a8 8 0 018 8v24a8 8 0 01-8 8H12a8 8 0 01-8-8V12a8 8 0 018-8zm0 4a4 4 0 00-4 4v24a4 4 0 004 4h24a4 4 0 004-4V12a4 4 0 00-4-4H12zm6 12a2 2 0 100-4 2 2 0 000 4zm12 12a2 2 0 100-4 2 2 0 000 4z"
-    //         fill="#1C1C1C"
-    //         fillRule="nonzero"
-    //       ></path>
-    //     </svg>
-    //     <span className="hidden group-hover:block transform scale-[70%] absolute bg-white text-[13px] py-5 font-medium leading-[36px] tracking-[0.1px] right-[10px] top-[4px] rounded-[3px] whitespace-nowrap text-[#794AFF]">
-    //       Features
-    //     </span>
-    //   </Link>
-    // </div>
   );
 }
