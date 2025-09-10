@@ -5,7 +5,7 @@ export function ThirdStep() {
     <div className="sticky top-[180px] mx-[36px] bg-gradient-to-b from-[#28282C] to-[#2E2E34] rounded-[24px] border border-[#7F7F7F1A]">
       <div className="min-w-[1176px] mx-auto bg-[url('/images/Mobile-App-How-BG-2.webp')] bg-no-repeat bg-bottom bg-contain">
         <div className="text-center pt-16 flex flex-col gap-4 items-center w-[44%] mx-auto">
-          <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
+          <div className="w-max border border-[#8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
             <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
               Step 3
             </p>

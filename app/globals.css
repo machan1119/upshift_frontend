@@ -336,3 +336,131 @@ main::before {
   background: linear-gradient(225deg, #10CFF5 0%, #FFFFFF00 100%);
   z-index: 2;
 }
+
+@property --ui-borderanim-angle {
+  syntax: '<angle>';
+  initial-value: 0turn;
+  inherits: false;
+}
+
+@keyframes borderRotate {
+  0% {
+    --ui-borderanim-angle: 0turn;
+  }
+  100% {
+    --ui-borderanim-angle: 1turn;
+  }
+}
+.pricing-animation::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -1px;
+  bottom: -1px;
+  border: solid transparent;
+  border-width: 1px 0px 1px 0px;
+  animation: borderRotate 5s linear infinite;
+  pointer-events: none;
+  background: conic-gradient(from var(--ui-borderanim-angle), transparent 88%, #36BFFA, #36BFFA 99.7%, transparent) border-box;
+  background-clip: border-box;
+  background-origin: border-box;
+  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0)) content-box,
+      radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(2% - 1px), #000) border-box;
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+}
+
+/* animations */
+/* Fade in from Left */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animation-fade-in-left {
+  animation: fadeInLeft 0.6s ease forwards;
+}
+
+/* Fade in from Right */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animation-fade-in-right {
+  animation: fadeInRight 0.6s ease forwards;
+}
+
+/* Fade in from Top */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animation-fade-in-top {
+  animation: fadeInTop 2s ease forwards;
+}
+
+/* Fade in from Bottom */
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animation-fade-in-bottom {
+  animation: fadeInBottom 2s ease forwards;
+}
+
+/* Scale Up with fade-in from top (origin bottom center) */
+@keyframes scaleFadeInTop {
+  0% {
+    opacity: 0;
+    transform-origin: center bottom;
+    transform: translateY(-20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: center bottom;
+    transform: translateY(0) scale(1);
+  }
+}
+.animation-scale-fade-in-top {
+  animation: scaleFadeInTop 0.7s ease forwards;
+}
+
+/* Scale Down with fade-in from top (origin bottom center) */
+@keyframes scaleFadeOutTop {
+  0% {
+    opacity: 0;
+    transform-origin: center bottom;
+    transform: translateY(-20px) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: center bottom;
+    transform: translateY(0) scale(1);
+  }
+}
+.animation-scale-fade-out-top {
+  animation: scaleFadeOutTop 2s ease forwards;
+}

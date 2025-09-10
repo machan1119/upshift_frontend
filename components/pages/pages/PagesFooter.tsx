@@ -23,27 +23,27 @@ const PagesFooter = () => {
                 Company
               </h6>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Overview
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Features
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Solutions
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Tutorials
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Pricing
                 </span>
               </Link>
@@ -53,27 +53,27 @@ const PagesFooter = () => {
                 Product
               </h6>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   About Us
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Careers
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   News
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Media Kit
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Contact
                 </span>
               </Link>
@@ -83,27 +83,27 @@ const PagesFooter = () => {
                 Collaborate
               </h6>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Partners
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Partners Program
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Affiliate Program
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   Community
                 </span>
               </Link>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   HR Partner Program
                 </span>
               </Link>
@@ -113,7 +113,7 @@ const PagesFooter = () => {
                 Contact Us
               </h6>
               <Link href="#">
-                <span className="text-[16px] text-black font-medium leading-[25.6px]">
+                <span className="text-[16px] text-black hover:text-primary font-medium leading-[25.6px]">
                   info@upshift.com
                 </span>
               </Link>
