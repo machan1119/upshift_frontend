@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const PagesHeader = () => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -18,24 +18,25 @@ const PagesHeader = () => {
   }, []);
 
   const menuItems = [
-    { name: "About Us", href: "/pages/about_us/" },
-    { name: "Services", href: "/pages/services/" },
-    { name: "Team", href: "/pages/team/" },
-    { name: "Pricing", href: "/pages/pricing/" },
-    { name: "Contact", href: "/pages/contact/" },
+    { name: "About us", href: "/pages/about_us" },
+    { name: "Services", href: "/pages/services" },
+    { name: "Team", href: "/pages/team" },
+    { name: "Pricing", href: "/pages/pricing" },
+    { name: "Contact", href: "/pages/contact" },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent ${
-        !isScrolled && "shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)]"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)] ${
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-[650px] mx-auto h-max">
-        <div className="flex items-center justify-between min-h-[60px] mt-5 mb-10 mx-auto px-[14px] bg-white border border-light rounded-[16px]">
+      <nav className="max-w-[1176px] mx-auto px-[10px]">
+        <div className="flex items-center justify-between h-24 mx-auto">
+          {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/Mobile-App-Hero-Logo.webp"
+              src="/images/Upshift-Logo.webp"
               alt="Upshift Logo"
               width={120}
               height={40}
@@ -43,12 +44,13 @@ const PagesHeader = () => {
             />
           </Link>
 
-          <div className="hidden md:flex items-center">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-black hover:text-[#0BA5EC] transition-colors duration-200 font-medium px-3"
+                className="text-black hover:text-[#0BA5EC] transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
@@ -56,10 +58,12 @@ const PagesHeader = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center justify-center">
+          <div className="hidden px-4 md:flex items-center justify-center">
             <Link
-              href="/pages/get_a_quote/"
-              className={`w-full text-[16px] leading-[16px] font-medium shadow-[0_2px_4px_0_rgba(0,10,31,0.2),_inset_0_6px_3px_-1px_rgba(255,255,255,0.2)] bg-primary px-[20.8px] py-[11.2px] rounded-[12px] text-white`}
+              href="/pages/get_a_quote"
+              className={`w-full ${
+                isScrolled ? "btn-third" : "btn-secondary "
+              }`}
             >
               Get a quote
             </Link>
@@ -108,8 +112,11 @@ const PagesHeader = () => {
                 {item.name}
               </Link>
             ))}
-            <Link href="#" className={`block text-center btn-third`}>
-              Sign In
+            <Link
+              href="/pages/get_a_quote"
+              className={`block text-center btn-third`}
+            >
+              Get a quote
             </Link>
           </div>
         </div>
@@ -118,4 +125,4 @@ const PagesHeader = () => {
   );
 };
 
-export default PagesHeader;
+export default Header;

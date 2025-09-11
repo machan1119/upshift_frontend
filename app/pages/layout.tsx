@@ -1,5 +1,5 @@
 import { Helper } from "@/components/Helper";
-import PagesFooter from "@/components/pages/pages/PagesFooter";
+import Footer from "@/components/pages/mobile_app/Footer";
 import PagesHeader from "@/components/pages/pages/PagesHeader";
 
 export default function PagesLayout({
@@ -12,7 +12,7 @@ export default function PagesLayout({
       <PagesHeader />
       <Helper />
       {children}
-      <PagesFooter />
+      <Footer />
     </main>
   );
 }
