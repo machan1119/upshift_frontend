@@ -7,10 +7,21 @@ import Link from "next/link";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const [isScrollDown, setIsScrollDown] = useState(false);
+  console.log(isScrolled, isScrollDown);
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+
+      // Set isScrolled when scrolled beyond 50px
+      setIsScrolled(currentScrollY > 50);
+
+      // Set isScrollDown based on scroll direction
+      setIsScrollDown(currentScrollY > lastScrollY);
+
+      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,9 +38,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)] ${
+      className={`top-0 left-0 right-0 z-50 transition-all duration-300 shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)] ${
         isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-      }`}
+      } ${isScrollDown ? "hidden" : "fixed"}`}
     >
       <nav className="max-w-[1176px] mx-auto px-[10px]">
         <div className="flex items-center justify-between h-24 mx-auto">
