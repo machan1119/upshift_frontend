@@ -65,14 +65,14 @@ function Card({ img, name, role }: TeamsType) {
           width={310}
           height={310}
           alt="Teams"
-          className="w-[310px] h-[310px] rounded-[8px] border-[4px] border-white"
+          className="md:w-[310px] md:h-[310px] size-auto rounded-[8px] border-[4px] border-white"
         />
       </div>
       <div className="flex flex-col gap-1">
-        <p className="text-[20px] text-black font-normal leading-[24px]">
+        <p className="text-[16px] md:text-[20px] text-black font-normal leading-[24px]">
           {name}
         </p>
-        <p className="text-[16px] text-[#11111199] font-normal leading-[25.6px]">
+        <p className="text-[14px] md:text-[16px] text-[#11111199] font-normal leading-[25.6px]">
           {role}
         </p>
       </div>
@@ -90,7 +90,7 @@ const MeetTeamSection = () => {
               Meet the team
             </p>
           </div>
-          <h2 className="text-[#111111] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
             Driven by expertise, united by vision
           </h2>
           <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px] w-[75%]">

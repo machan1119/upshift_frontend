@@ -93,10 +93,10 @@ const Counter = ({
 export function StatsSection() {
   return (
     <section className="w-full bg-gray-50 flex flex-col items-center pt-12 pb-6 px-6 border border-b-[#7F7F7F1F]">
-      <div className="rounded-[56px] bg-dark px-[128px]">
+      <div className="rounded-[56px] bg-dark px-[80px] md:px-[128px]">
         <div className="w-full flex items-center bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
-          <div className="max-w-[1176px] mx-auto flex items-center">
-            <div className="animation-fade-in-top w-[50%] pl-[80px] pr-[40px] flex flex-col mx-3 py-[120px] gap-4">
+          <div className="max-w-[1176px] mx-auto flex md:flow-row flex-col items-center">
+            <div className="animation-fade-in-top w-full md:w-[50%] md:pl-[80px] md:pr-[40px] flex flex-col mx-3 pt-[80px] md:py-[120px] gap-4">
               <p className="w-max rounded-full py-1 px-2 text-primary text-[16px] border border-[#FFFFFF99] bg-transparent">
                 Stats
               </p>
@@ -108,7 +108,7 @@ export function StatsSection() {
                 making it accessible and effective for businesses of all sizes.
               </p>
             </div>
-            <div className="py-[120px] pr-[24px] flex flex-col gap-10">
+            <div className="md:py-[120px] py-[80px] md:pr-[24px] flex flex-col gap-10">
               <div className="grid grid-cols-2 gap-5">
                 {stats.map((state, index) => (
                   <Counter

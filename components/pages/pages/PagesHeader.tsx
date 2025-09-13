@@ -8,7 +8,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrollDown, setIsScrollDown] = useState(false);
-  console.log(isScrolled, isScrollDown);
   useEffect(() => {
     let lastScrollY = window.scrollY;
 

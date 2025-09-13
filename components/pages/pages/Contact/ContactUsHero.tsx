@@ -5,12 +5,12 @@ export default function ContactUsHero() {
   return (
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A] bg-gradient-to-b from-[#DDEDFA] to-[#FFFFFF00]">
       <div className="max-w-[1176px] mx-auto py-[192px] px-[60px] flex flex-col gap-10 bg-[url('/images/Contact-Hero-BG.webp')] bg-right bg-[700px_auto] bg-no-repeat">
-        <div className="w-full flex gap-[60px] items-center">
+        <div className="w-full flex md:flex-row flex-col gap-[60px] items-center">
           <div className="flex flex-col gap-4 p-[20px] justify-center">
             <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
               Contact Us
             </p>
-            <h2 className="text-[64px] leading-[76.8px] font-semibold text-black">
+            <h2 className="md:text-[64px] text-5xl md:leading-[76.8px] font-semibold text-black">
               Let’s talk
             </h2>
             <p className="text-[18px] leading-[28.8px] text-[#11111199] font-normal">

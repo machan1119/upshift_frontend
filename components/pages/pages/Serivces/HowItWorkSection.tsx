@@ -30,17 +30,17 @@ export function HowItWorkSection() {
     <div className="w-full py-10 bg-gray-50 border-y border-y-[#7F7F7F1A]">
       <div className="mx-[36px] bg-gradient-to-b from-[#28282C] to-[#2E2E34] rounded-[24px] ">
         <div className="max-w-[1176px] mx-auto bg-[url('/images/Mobile-App-How-BG-2.webp')] bg-no-repeat bg-bottom bg-contain">
-          <div className="text-center pt-[80px] pb-[100px] flex flex-col gap-4 items-center w-[44%] mx-auto">
+          <div className="text-center pt-[80px] pb-[100px] flex flex-col gap-4 items-center w-[80%] md:w-[44%] mx-auto">
             <div className="w-max border border-[#8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-transparent">
               <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
                 How It Works
               </p>
             </div>
-            <h2 className="text-[#FFFFFF] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+            <h2 className="text-[#FFFFFF] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
               Effortless email marketing in four simple steps.
             </h2>
 
-            <div className="w-[850px] flex flex-col gap-4 items-center">
+            <div className="md:w-[850px] w-auto flex flex-col gap-4 items-center">
               {Steps.map((step, index) => (
                 <div
                   className="w-full py-[36px] px-[24px] items-center flex gap-6 rounded-[12px] bg-[#313236]"

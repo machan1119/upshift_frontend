@@ -9,7 +9,7 @@ export default function MissionSection() {
               Mission
             </p>
           </div>
-          <p className="text-[48px] font-medium leading-[57.6px] text-[#11111199]">
+          <p className="text-[24px] md:text-[48px] font-medium md:leading-[57.6px] text-[#11111199]">
             <span className="text-black"></span>
             Our mission is to empower businesses to achieve their{" "}
             <span className="text-black">marketing goals</span>

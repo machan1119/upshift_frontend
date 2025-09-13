@@ -111,13 +111,13 @@ const BenefitsSection = () => {
     <section className="w-full bg-gray-50">
       <div className="max-w-[1176px] w-full mx-auto flex flex-col">
         {/* Section Header */}
-        <div className="text-center pt-16 pb-14 flex flex-col gap-4 items-center w-[50%] mx-auto">
+        <div className="text-center pt-16 pb-14 flex flex-col gap-4 items-center w-[80%] md:w-[50%] mx-auto">
           <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
             <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
               Benefits
             </p>
           </div>
-          <h2 className="text-[#111111] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
             Maximize your investing potential
           </h2>
           <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px]">

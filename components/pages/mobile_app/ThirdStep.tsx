@@ -10,7 +10,7 @@ export function ThirdStep() {
               Step 3
             </p>
           </div>
-          <h2 className="text-[#FFFFFF] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+          <h2 className="text-[#FFFFFF] font-semibold text-4xl md:leading-[67.2px] md:text-[56px] tracking-[-1.12px]">
             Fund your account and start investing
           </h2>
           <div className="text-[#FFFFFF99] text-[16px] font-normal leading-[25.6px]">
@@ -19,14 +19,14 @@ export function ThirdStep() {
             Select your risk tolerance from conservative to aggressive to match
             your investment strategy.
           </div>
-          <div className="relative z-20 border-x-[20px] border-t-[20px] rounded-t-[60px] border-x-[#7F7F7F1F] border-t-[#7F7F7F1F]">
+          <div className="relative w-[70%] md:w-full z-20 border-[10px] md:border-[20px] rounded-[30px] md:rounded-[60px] border-[#7F7F7F1F]">
             <div className="relative mx-auto max-w-sm">
               <Image
                 src="/images/Mobile-App-How-Image-3.webp"
-                alt="Mobile-App-How-Image-1"
+                alt="Mobile-App-How-Image-3"
                 width={780}
                 height={1688}
-                className="w-full z-10 h-auto shadow-[0px_0px_16px_-3px_rgba(65,209,255,0.6)] rounded-t-[40px]"
+                className="w-full z-10 h-auto rounded-[20px] md:rounded-[40px] shadow-[0px_0px_16px_-3px_rgba(65,209,255,0.6)]"
                 priority
               />
             </div>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-gray-50">
       <div className="max-w-[1176px] w-full flex mx-auto border-b-[1px] border-b-[#7F7F7F1A] px-10 py-[50px]">
-        <div className="w-full grid grid-cols-6 grid-rows-2 gap-y-6">
+        <div className="w-full grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 gap-y-6">
           <div className="col-span-2">
             <Link href="/" className="flex items-center">
               <Image
@@ -117,7 +117,7 @@ const Footer = () => {
               </span>
             </Link>
             <Link href="#">
-              <span className="text-[16px] hover:text-primary text-black hover:text-primary font-medium leading-[25.6px]">
+              <span className="text-[16px] hover:text-primary text-black font-medium leading-[25.6px]">
                 (239) 555-0108
               </span>
             </Link>

@@ -13,7 +13,7 @@ const HowItWorksSection = () => {
             How it works
           </p>
         </div>
-        <h2 className="text-[#111111] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+        <h2 className="md:w-full w-[80%] text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
           Simplifying your investment journey
         </h2>
       </div>

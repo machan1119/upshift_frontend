@@ -3,12 +3,12 @@ import Link from "next/link";
 export function EnterprisePlanSection() {
   return (
     <section className="w-full bg-gray-50 flex flex-col items-center pt-12 pb-6 px-6 border border-b-[#7F7F7F1F]">
-      <div className="w-full rounded-[56px] bg-dark px-[128px]">
+      <div className="w-full rounded-[56px] bg-dark px-[60px] md:px-[128px]">
         <div className="flex flex-col gap-4 items-center pt-[80px] pb-[100px] bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
           <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-transparent border border-[#7F7F7F1A] w-max">
             Enterprise Plan
           </p>
-          <h2 className="text-[56px] text-white leading-[67.2px] tracking-[-1.12px] font-semibold text-center">
+          <h2 className="md:text-[56px] text-4xl text-white md:leading-[67.2px] tracking-[-1.12px] font-semibold text-center">
             Need a custom plan?
           </h2>
           <p className="w-[50%] text-[16px] leading-[25.6px] pb-2 font-normal text-center text-[#FFFFFF96]">

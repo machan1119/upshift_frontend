@@ -11,7 +11,7 @@ const HeroSection = () => {
             <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
               Pricing
             </p>
-            <h1 className="w-[60%] text-[64px] text-center font-semibold tracking-[-1.28px] leading-[76.8px] text-black">
+            <h1 className="md:w-[60%] w-[80%] md:text-[64px] text-5xl text-center font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
               Choose the plan that fits your business
             </h1>
             <div className="flex flex-col gap-[18px] w-[60%] text-center">
@@ -24,7 +24,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="p-[34px] rounded-[12px] m-2 flex flex-col gap-3 grow">
             <h5 className="font-semibold text-[16px] leading-[25.6px] text-[#1111119]">
               Starter

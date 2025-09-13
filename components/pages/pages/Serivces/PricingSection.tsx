@@ -11,7 +11,7 @@ export function PricingSection() {
                 Pricing
               </p>
             </div>
-            <h2 className="text-[#FFFFFF] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+            <h2 className="text-[#FFFFFF] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
               Choose the plan that fits your business
             </h2>
             <p className="text-[18px] leading-[28.8px] font-normal text-[#FFFFFF99]">
@@ -19,7 +19,7 @@ export function PricingSection() {
               your marketing efforts, we have a plan that fits.
             </p>
           </div>
-          <div className="w-full relative pricing-animation grid grid-cols-3 border-y border-[#7F7F7F1A]">
+          <div className="w-full relative pricing-animation grid grid-cols-1 md:grid-cols-3 border-y border-[#7F7F7F1A]">
             <div className="p-[34px] rounded-[12px] m-2 flex flex-col gap-3 grow">
               <h5 className="font-semibold text-[16px] leading-[25.6px] text-white">
                 Free

@@ -58,22 +58,22 @@ const HeroSection = () => {
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-4xl text-center md:text-5xl lg:text-7xl leading-[86.4px] font-semibold text-[#111111] w-[90%] pb-6">
+              <h1 className="text-5xl text-center md:text-7xl md:leading-[86.4px] font-semibold text-[#111111] w-[90%] pb-6">
                 Invest with confidence, Grow your future
               </h1>
 
               <div
-                className={`relative z-20 border-[20px] rounded-[60px] border-[#7F7F7F1F] ${
+                className={`relative w-[50%] md:w-full max-w-sm mx-auto z-20 border-[10px] md:border-[20px] rounded-[30px] md:rounded-[60px] border-[#7F7F7F1F] ${
                   isVisible ? "animate-fade-in-right" : "opacity-0"
                 }`}
               >
-                <div className="relative mx-auto max-w-sm">
+                <div className="w-full">
                   <Image
                     src="/images/Mobile-App-Hero-Image.webp"
                     alt="Upshift Mobile App"
                     width={780}
                     height={1688}
-                    className="w-full z-10 h-auto rounded-[40px] shadow-[0px_0px_16px_-3px_rgba(65,209,255,0.6)]"
+                    className="w-full z-10 h-auto rounded-[20px] md:rounded-[40px] shadow-[0px_0px_16px_-3px_rgba(65,209,255,0.6)]"
                     priority
                   />
                 </div>

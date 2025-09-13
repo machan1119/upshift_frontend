@@ -11,7 +11,7 @@ const HeroSection = () => {
             <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
               Enterprise Plan
             </p>
-            <h1 className="w-[80%] text-[64px] text-center font-semibold tracking-[-1.28px] leading-[76.8px] text-black">
+            <h1 className="w-[80%] md:text-[64px] text-5xl text-center font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
               Get a custom quote
             </h1>
             <div className="flex flex-col gap-[18px] w-[80%] text-center">
@@ -47,23 +47,23 @@ const HeroSection = () => {
             <label className="text-[14px] text-[#14141466] mb-[5px] font-medium">
               Tools needed
             </label>
-            <div className="flex gap-[6px]">
-              <div className="p-2 rounded-[8px] text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
+            <div className="grid gap-[6px] grid-cols-3 md:grid-cols-6">
+              <div className="p-2 rounded-[8px] text-center flex items-center justify-center text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
                 SEO Tool
               </div>
-              <div className="p-2 rounded-[8px] text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
+              <div className="p-2 rounded-[8px] text-center flex items-center justify-center text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
                 Content Management
               </div>
-              <div className="p-2 rounded-[8px] text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
+              <div className="p-2 rounded-[8px] text-center flex items-center justify-center text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
                 Social Media Tools
               </div>
-              <div className="p-2 rounded-[8px] text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
+              <div className="p-2 rounded-[8px] text-center flex items-center justify-center text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
                 PPC
               </div>
-              <div className="p-2 rounded-[8px] text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
+              <div className="p-2 rounded-[8px] text-center flex items-center justify-center text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
                 Analytics
               </div>
-              <div className="p-2 rounded-[8px] text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
+              <div className="p-2 rounded-[8px] text-center flex items-center justify-center text-[14px] cursor-pointer font-medium text-[#11111199] bg-[#fafafa] border-[#eaeaea] hover:text-[#065986] border hover:border-[#E0F2FE] hover:bg-[#E0F2FE]">
                 Automation
               </div>
             </div>

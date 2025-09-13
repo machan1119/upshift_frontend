@@ -113,7 +113,7 @@ const TestimonialsSection = () => {
               Testimonials
             </p>
           </div>
-          <h2 className="text-[#111111] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
             What our users said about Upshift
           </h2>
           <div className="py-[2px] pr-2 pl-[2px] bg-[#DCFAE6] rounded-[8px] flex gap-2 items-center">
@@ -133,7 +133,7 @@ const TestimonialsSection = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="grid grid-cols-3 gap-6 z-[2]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 z-[2]">
             {Testimonials.map((member, index) => (
               <Card
                 img={member.img}

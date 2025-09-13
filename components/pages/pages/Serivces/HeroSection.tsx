@@ -17,7 +17,7 @@ const HeroSection = () => {
                 className="absolute top-0 min-w-24 min-h-24 z-10"
               />
             </div>
-            <h1 className="w-[60%] text-[64px] text-center font-semibold tracking-[-1.28px] leading-[76.8px] text-black">
+            <h1 className="w-[60%] text-4xl md:text-[64px] text-center font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
               Power features to elevate your marketing campaign
             </h1>
             <div className="flex flex-col gap-[18px] w-[60%] text-center">

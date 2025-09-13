@@ -99,18 +99,18 @@ const StatsSection = () => {
   return (
     <section className="w-full bg-gray-50">
       <div className="max-w-[1176px] w-full mx-auto flex flex-col gap-10">
-        <div className="flex w-full">
-          <div className="w-[58%] pt-[56px] pl-[64px] flex flex-col gap-4">
+        <div className="flex w-full md:flex-row flex-col gap-5 md:gap-0">
+          <div className="md:w-[58%] w-full pt-[56px] md:pl-[64px] md:pr-0 px-12 flex flex-col gap-4">
             <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
               <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
                 About us
               </p>
             </div>
-            <h2 className="text-[#111111] font-semibold leading-[67.2px] text-[56px] tracking-[-1.12px]">
+            <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
               Empowering every individual to achieve financial independence
             </h2>
           </div>
-          <div className="w-[42%] flex flex-col gap-4 justify-end px-12">
+          <div className="md:w-[42%] w-full flex flex-col gap-4 justify-end px-12">
             <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px]">
               Designed for both novice and seasoned investors, our app combines
               powerful technology with user-friendly features to help you manage

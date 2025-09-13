@@ -17,7 +17,7 @@ const HeroSection = () => {
                 className="absolute top-0 min-w-24 min-h-24 z-10"
               />
             </div>
-            <h1 className="animation-fade-in-top text-[64px] font-semibold tracking-[-1.28px] leading-[76.8px] text-black">
+            <h1 className="animation-fade-in-top text-5xl md:text-[64px] font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
               The story of <span className="text-primary">Upshift</span>
             </h1>
             <div className="animation-fade-in-top flex flex-col gap-[18px] w-[60%] text-center">
@@ -39,7 +39,7 @@ const HeroSection = () => {
                     width={1500}
                     height={855}
                     alt="About us hero image"
-                    className="w-auto h-[584.86px] aspect-[1500/855] rounded-[16px] border-[8px] border-white"
+                    className="w-auto md:h-[584.86px] aspect-[1500/855] rounded-[16px] border-[8px] border-white"
                   />
                 </div>
                 {/* <div className="w-full border border-[#7F7F7F7F2B] rounded-[16px]"></div> */}
