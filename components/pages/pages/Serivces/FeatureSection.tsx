@@ -60,7 +60,7 @@ export default function FeatureSection() {
       </div>
       <div className="w-full border-b border-b-[#7F7F7F1A]">
         <div className="max-w-[1176px] mx-auto w-full flex md:flex-row flex-col justify-between bg-[url('/images/Services-Features-BG-2.webp')] bg-contain bg-no-repeat bg-bottom">
-          <div className="md:w-[50%] w-full flex flex-col items-center gap-4 justify-center p-10 md:p-20 border-r border-r-[#7F7F7F1A]">
+          <div className="md:w-[50%] w-full flex flex-col items-center justify-center gap-4 md:items-start p-10 md:p-20 border-r border-r-[#7F7F7F1A]">
             <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
               <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
                 Features
@@ -75,7 +75,7 @@ export default function FeatureSection() {
               resonates and converts.
             </p>
           </div>
-          <div className="relative flex w-full md:px-[100px] md:py-[90px] justify-center gap-5 items-center">
+          <div className="relative flex md:w-[50%] w-full md:px-[100px] md:py-[90px] justify-center gap-5 items-center">
             <Image
               src="/images/Services-Features-Image-3.webp"
               alt="Services-Features-Image-3"
@@ -115,7 +115,7 @@ export default function FeatureSection() {
               priority
             />
           </div>
-          <div className="md:w-[55%] w-full flex flex-col items-center gap-4 justify-center p-10 md:p-20">
+          <div className="md:w-[55%] w-full flex flex-col items-center md:items-start gap-4 justify-center p-10 md:p-20">
             <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
               <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
                 Features
