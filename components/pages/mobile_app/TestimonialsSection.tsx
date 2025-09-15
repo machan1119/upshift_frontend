@@ -23,13 +23,13 @@ function TestimonialsCard({
   rating,
 }: TestimonialsType) {
   return (
-    <div className="justify-self-center flex w-[90%] md:w-[780px] px-[28px] pt-[28px] pb-[24px] md:px-[56px] md:pt-[56px] md:pb-[48px] border border-[#7F7F7F1F] rounded-[24px] bg-[url('/images/Mobile-App-Testimonials-BG.webp')] bg-no-repeat bg-[length:340px_auto] bg-right-top">
+    <div className="justify-self-center flex flex-col md:flex-row w-[90%] md:w-[780px] px-[28px] pt-[28px] pb-[24px] md:px-[56px] md:pt-[56px] md:pb-[48px] border border-[#7F7F7F1F] rounded-[24px] bg-[url('/images/Mobile-App-Testimonials-BG.webp')] bg-no-repeat bg-[length:340px_auto] bg-right-top">
       <Image
         src={image}
         width={266}
         height={266}
         alt="user"
-        className="w-[133px] h-[133px] md:w-[266px] md:h-[266px] mr-[20px] md:mr-[50px]"
+        className="w-[105px] h-[105px] md:w-[266px] md:h-[266px] mr-[20px] md:mr-[50px] rounded-xl mb-[50px] md:mb-0"
       />
       <div className="flex flex-col">
         <p className="text-[18px] text-[#111111] font-semibold leading-[23.4px] tracking-[-0.18px]">
@@ -58,7 +58,7 @@ function TestimonialsCard({
               </svg>
             ))}
         </div>
-        <p className="text-[14px] md:text-[20px] font-medium md:leading-[32px] text-[#111111]">
+        <p className="text-[20px] font-medium leading-[32px] text-[#111111]">
           {text}
         </p>
       </div>
@@ -102,7 +102,7 @@ const TestimonialsSection = () => {
     <section className="w-full bg-gray-50 border border-b-[#7F7F7F1F]">
       <div className="max-w-[1176px] w-full mx-auto flex flex-col pt-16">
         {/* Section Header */}
-        <div className="text-center flex flex-col gap-4 items-center w-[60%] mx-auto pb-8">
+        <div className="text-center flex flex-col gap-4 items-center w-full md:w-[60%] mx-auto pb-8">
           <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
             <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
               Testimonials
@@ -141,7 +141,7 @@ const TestimonialsSection = () => {
             ))}
           </Swiper>
 
-          <button className="custom-swiper-button-next cursor-pointer absolute top-[calc(50%-80px)] right-[10px] md:top-[calc(50%-20px)] md:right-[100px] z-20 p-3 bg-[#7F7F7F17]">
+          <button className="custom-swiper-button-next hidden md:block cursor-pointer absolute top-[calc(50%-80px)] right-[10px] md:top-[calc(50%-20px)] md:right-[100px] z-20 p-3 bg-[#7F7F7F17]">
             <svg
               aria-hidden="true"
               viewBox="0 0 256 512"
@@ -156,7 +156,7 @@ const TestimonialsSection = () => {
               ></path>
             </svg>
           </button>
-          <button className="custom-swiper-button-prev cursor-pointer absolute top-[calc(50%-80px)] left-[10px] md:top-[calc(50%-20px)] md:left-[100px] z-20 p-3 bg-[#7F7F7F17]">
+          <button className="custom-swiper-button-prev hidden md:block cursor-pointer absolute top-[calc(50%-80px)] left-[10px] md:top-[calc(50%-20px)] md:left-[100px] z-20 p-3 bg-[#7F7F7F17]">
             <svg
               aria-hidden="true"
               viewBox="0 0 256 512"

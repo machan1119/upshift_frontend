@@ -1,17 +1,17 @@
 export function Ready() {
   return (
     <section className="w-full bg-gray-50 flex flex-col items-center pt-12 pb-6 px-6 border border-b-[#7F7F7F1F]">
-      <div className="rounded-[56px] bg-dark px-[128px]">
-        <div className="flex flex-col gap-4 items-center py-[120px] bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
-          <h2 className="text-4xl md:text-[56px] text-white md:leading-[67.2px] tracking-[-1.12px] font-semibold text-center">
+      <div className="rounded-[20px] md:rounded-[56px] bg-dark px-3 md:px-[128px]">
+        <div className="flex flex-col gap-4 items-center pb-5 pt-10 md:py-[120px] bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
+          <h2 className="text-[28px] md:text-[56px] text-white md:leading-[67.2px] tracking-[-1.12px] font-semibold text-center">
             Ready to start investing?
           </h2>
-          <p className="md:w-[50%] w-[80%] text-[16px] leading-[25.6px] pb-2 font-normal text-center text-[#FFFFFF96]">
+          <p className="md:w-[50%] w-[80%] text-[14px] md:text-[16px] leading-[25.6px] pb-2 font-normal text-center text-[#FFFFFF96]">
             Join thousands of successful investors who trust our app to manage
             their investments. Download now and transform your financial future
           </p>
-          <form className="md:w-[50%] w-[80%] flex gap-[15px] items-center">
-            <div className="w-[80%] flex rounded-[12px] bg-white p-2">
+          <form className="md:w-[50%] w-[80%] flex md:flex-row flex-col gap-[15px] items-center">
+            <div className="w-full flex rounded-[12px] bg-white p-2">
               <div className="m-[6px]">
                 <svg
                   aria-hidden="true"
@@ -35,7 +35,7 @@ export function Ready() {
                 className="outline-none w-full"
               />
             </div>
-            <button className="flex items-center py-[14px] px-5 bg-primary rounded-[12px] border border-[#4F4F4F1A] cursor-pointer font-medium text-[16px] leading-[16px] text-white">
+            <button className="flex items-center w-full md:w-max justify-center py-[14px] px-5 bg-primary rounded-[12px] border border-[#4F4F4F1A] cursor-pointer font-medium text-[16px] leading-[16px] text-white">
               <p>Get Started</p>
               <p className="text-[20px]">&gt;</p>
             </button>

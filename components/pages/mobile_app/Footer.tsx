@@ -122,8 +122,8 @@ const Footer = () => {
               </span>
             </Link>
           </div>
-          <div className="col-span-2 row-start-2" />
-          <div className="flex flex-col p-[10px] gap-6 col-span-3 row-start-2">
+          <div className="md:col-span-2 md:row-start-2" />
+          <div className="flex flex-col p-[10px] gap-6 col-span-2 md:row-start-2">
             <div className="flex gap-7">
               <Link href="#">
                 <svg
