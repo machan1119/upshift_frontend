@@ -107,13 +107,13 @@ const TestimonialsSection = () => {
   return (
     <section className="w-full bg-gray-50 border-b border-b-[#7F7F7F1F]">
       <div className="max-w-[1176px] w-full mx-auto flex flex-col pt-[80px] px-[60px] pb-[120px]">
-        <div className="text-center flex flex-col gap-4 items-center w-[60%] mx-auto pb-8">
+        <div className="text-center flex flex-col gap-4 items-center w-[80%] md:w-[60%] mx-auto pb-8">
           <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
             <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
               Testimonials
             </p>
           </div>
-          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
+          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-[26px] md:text-[56px] tracking-[-1.12px]">
             What our users said about Upshift
           </h2>
           <div className="py-[2px] pr-2 pl-[2px] bg-[#DCFAE6] rounded-[8px] flex gap-2 items-center">

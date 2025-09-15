@@ -89,7 +89,7 @@ const TeamFeatures: TeamFeaturesType[] = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-50 bg-gradient-to-b from-[#DDEDFA] to-[#FFFFFF00] pt-[180px]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-50 bg-gradient-to-b from-[#DDEDFA] to-[#FFFFFF00] pt-[100px] md:pt-[180px]">
       <div className="max-w-[1176px] mx-auto border-b-[1px] border-b-[#7F7F7F1A]">
         <div className="z-[2] bg-[url('/images/About-Us-Hero-BG.webp')] bg-[800px_auto] pb-[30px] bg-top bg-no-repeat">
           <div className="flex flex-col gap-4 items-center mt-18 bg-bottom bg-no-repeat bg-contain">
@@ -102,11 +102,11 @@ const HeroSection = () => {
                 className="absolute top-0 min-w-24 min-h-24 z-10"
               />
             </div>
-            <h1 className="w-[60%] text-[64px] text-center font-semibold tracking-[-1.28px] leading-[76.8px] text-black">
+            <h1 className="animation-fade-in-top text-center text-[40px] md:text-[64px] font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
               Meet the innovators behind Upshift
             </h1>
-            <div className="flex flex-col gap-[18px] w-[60%] text-center">
-              <p className="text-[18px] leading-[28.8px] font-normal text-[#11111199]">
+            <div className="animation-fade-in-top flex flex-col gap-[18px] w-[90%] md:w-[60%] text-center">
+              <p className="text-[16px] md:text-[18px] md:leading-[28.8px] font-normal text-[#11111199]">
                 Behind every great product is a great team. The Upshift team
                 comprises industry experts, innovative thinkers, and dedicated
                 professionals committed to revolutionizing the way businesses
@@ -115,7 +115,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex">
+        <div className="grid grid-cols-1 md:grid-cols-4">
           {TeamFeatures.map((feature, index) => (
             <div
               key={index}

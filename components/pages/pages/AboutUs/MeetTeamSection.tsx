@@ -65,7 +65,7 @@ function Card({ img, name, role }: TeamsType) {
           width={310}
           height={310}
           alt="Teams"
-          className="md:w-[310px] md:h-[310px] size-auto rounded-[8px] border-[4px] border-white"
+          className="md:w-[310px] md:h-[310px] size-full rounded-[8px] border-[4px] border-white"
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -84,21 +84,21 @@ const MeetTeamSection = () => {
   return (
     <section className="w-full bg-gray-50 border-b border-b-[#7F7F7F1F]">
       <div className="max-w-[1176px] w-full mx-auto flex flex-col pt-16">
-        <div className="text-center flex flex-col gap-4 items-center w-[60%] mx-auto pb-8">
+        <div className="text-center flex flex-col gap-4 items-center w-[90%] md:w-[60%] mx-auto pb-8">
           <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
             <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
               Meet the team
             </p>
           </div>
-          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
+          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-[26px] md:text-[56px] tracking-[-1.12px]">
             Driven by expertise, united by vision
           </h2>
-          <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px] w-[75%]">
+          <div className="text-[#11111199] text-[14px] md:text-[16px] font-normal leading-[25.6px] w-[75%]">
             Our team at Upshift is comprised of seasoned professionals from
             various fields within digital marketing and technology.
           </div>
         </div>
-        <div className="grid grid-cols-3 grid-rows-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
           {Teams.map((member, index) => (
             <Card
               img={member.img}

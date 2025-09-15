@@ -72,18 +72,19 @@ const Investors: InvestorsType[] = [
 export default function InvestorSection() {
   return (
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A]">
-      <div className="max-w-[1176px] mx-auto py-[100px] px-[80px] flex flex-col gap-10">
-        <div className="flex gap-[60px] items-center">
-          <div className="flex flex-col gap-4 p-[20px] justify-center">
+      <div className="max-w-[1176px] mx-auto md:py-[100px] md:px-[80px] p-10 flex flex-col gap-10">
+        <div className="flex md:flex-row flex-col gap-8 md:gap-[60px] items-center">
+          <div className="flex flex-col md:items-start items-center gap-4 md:p-[20px] justify-center">
             <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
               Investors
             </p>
-            <h2 className="text-[48px] leading-[57.6px] font-semibold text-black">
-              Join us in making a difference
+            <h2 className="md:text-[48px] text-[26px] md:leading-[57.6px] font-semibold text-black">
+              Built for the best, backed by the best
             </h2>
-            <p className="text-[16px] leading-[25.6px] text-[#11111199] font-normal">
-              Learn more about our community programs and find out how you can
-              get involved with Upshift’s efforts to create positive change.
+            <p className="text-[14px] md:text-[16px] md:text-start text-center md:leading-[25.6px] text-[#11111199] font-normal">
+              We are proud to be supported by a distinguished group of investors
+              who believe in our mission and share our vision for
+              revolutionizing digital marketing.
             </p>
           </div>
           <div className="min-w-max border border-[#7F7F7F1A] rounded-[18px]">
@@ -96,7 +97,7 @@ export default function InvestorSection() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
           {Investors.map((investor, index) => (
             <div
               className="px-[8px] py-[10px] bg-[#F2F4F7] rounded-[8px] flex items-center gap-3"

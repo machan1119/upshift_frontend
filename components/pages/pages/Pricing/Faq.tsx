@@ -56,7 +56,7 @@ export default function Faq() {
   return (
     <section className="py-16 px-6 bg-gray-50 w-full border-b-[1px] border-b-[#7F7F7F1A]">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-faq-text">
+        <h2 className="text-[26px] md:text-4xl font-bold text-center mb-12 text-faq-text">
           Frequently asked questions
         </h2>
 
@@ -68,7 +68,7 @@ export default function Faq() {
             >
               <button
                 onClick={() => toggleItem(faq.id)}
-                className="w-full text-left font-medium text-black text-lg flex items-center justify-between focus:outline-none"
+                className="w-full text-left font-medium text-black text-base md:text-lg flex items-center justify-between focus:outline-none"
               >
                 {faq.question}
                 <p className="w-5 h-5 text-[#11111199] text-[36px] transition-transform duration-300">

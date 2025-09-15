@@ -3,7 +3,7 @@ export default function MissionSection() {
   return (
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A]">
       <div className="max-w-[1176px] w-full mx-auto">
-        <div className="flex flex-col gap-4 border-b-[1px] border-b-[#7F7F7F1A] p-[80px]">
+        <div className="flex flex-col gap-4 border-b-[1px] border-b-[#7F7F7F1A] p-5 md:p-[80px]">
           <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
             <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
               Mission
@@ -22,8 +22,8 @@ export default function MissionSection() {
             <span className="text-black">engaging way possible.</span>
           </p>
         </div>
-        <div className="flex">
-          <div className="relative py-[80px] px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
+        <div className="flex flex-col md:flex-row">
+          <div className="relative p-10 md:py-[80px] md:px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
             <div className="w-[66px] h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export default function MissionSection() {
               curve in a rapidly evolving market
             </p>
           </div>
-          <div className="relative py-[80px] px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
+          <div className="relative p-10 md:py-[80px] md:px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
             <div className="w-[66px] h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -3,7 +3,7 @@ export default function ContactDetailSection() {
   return (
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A]">
       <div className="max-w-[1176px] w-full mx-auto">
-        <div className="flex">
+        <div className="grid md:grid-cols-3 grid-cols-1">
           <div className="flex flex-col gap-[5px] w-full relative items-center p-[20px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
             <div className="w-[66px] h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
               <svg

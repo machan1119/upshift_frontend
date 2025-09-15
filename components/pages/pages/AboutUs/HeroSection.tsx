@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-50 bg-gradient-to-b from-[#DDEDFA] to-[#FFFFFF00] pt-[180px]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-50 bg-gradient-to-b from-[#DDEDFA] to-[#FFFFFF00] pt-[100px] md:pt-[180px]">
       <div className="max-w-[1176px] mx-auto px-[10px] pb-[30px] border-b-[1px] border-b-[#7F7F7F1A]">
         <div className="z-[2] bg-[url('/images/About-Us-Hero-BG.webp')] bg-[800px_auto] bg-top bg-no-repeat">
           <div className="flex flex-col gap-4 items-center mt-18 bg-[url('/images/About-Us-Hero-BG-2.webp')] bg-bottom bg-no-repeat bg-contain">
@@ -17,21 +17,21 @@ const HeroSection = () => {
                 className="absolute top-0 min-w-24 min-h-24 z-10"
               />
             </div>
-            <h1 className="animation-fade-in-top text-5xl md:text-[64px] font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
+            <h1 className="animation-fade-in-top text-[40px] md:text-[64px] font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
               The story of <span className="text-primary">Upshift</span>
             </h1>
-            <div className="animation-fade-in-top flex flex-col gap-[18px] w-[60%] text-center">
-              <p className="text-[18px] leading-[28.8px] font-normal text-[#11111199]">
+            <div className="animation-fade-in-top flex flex-col gap-[18px] w-[90%] md:w-[60%] text-center">
+              <p className="text-[16px] md:text-[18px] md:leading-[28.8px] font-normal text-[#11111199]">
                 We started with a vision to democratize digital marketing,
                 making it accessible and effective for businesses of all sizes.
               </p>
-              <p className="text-[18px] leading-[28.8px] font-normal text-[#11111199]">
+              <p className="text-[16px] md:text-[18px] md:leading-[28.8px] font-normal text-[#11111199]">
                 Since launching in 2012, we have evolved into a leading provider
                 of innovative marketing solutions, trusted by over 150,000
                 businesses worldwide.
               </p>
             </div>
-            <div className="py-[48px] animation-scale-fade-out-top">
+            <div className="py-[12px] md:py-[48px] animation-scale-fade-out-top">
               <div className="flex flex-col items-center">
                 <div className="border border-[#7F7F7F7F2B] rounded-[16px]">
                   <Image

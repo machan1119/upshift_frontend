@@ -58,7 +58,7 @@ const HeroSection = () => {
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-5xl text-center md:text-7xl md:leading-[86.4px] font-semibold text-[#111111] w-[90%] pb-6">
+              <h1 className="text-[40px] text-center md:text-7xl md:leading-[86.4px] font-semibold text-[#111111] w-[90%] pb-6">
                 Invest with confidence, Grow your future
               </h1>
 
