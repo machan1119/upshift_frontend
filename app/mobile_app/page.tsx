@@ -8,8 +8,8 @@ import Footer from "@/components/pages/mobile_app/Footer";
 import { LeaderSection } from "@/components/pages/mobile_app/LeaderSection";
 import { HelpfulResource } from "@/components/pages/mobile_app/HelpfulResource";
 import { Ready } from "@/components/pages/mobile_app/Ready";
-import CursorCircle from "@/components/CursorCircle";
-import { Helper } from "@/components/Helper";
+import CursorCircle from "@/components/ui/CursorCircle";
+import { Helper } from "@/components/ui/Helper";
 import HowItWorksSection from "@/components/pages/mobile_app/HowItWorksSection";
 
 export default function MobileHome() {

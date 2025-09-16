@@ -1,5 +1,6 @@
 "use client";
 
+import Tag from "@/components/ui/Tag";
 import { useInView } from "react-intersection-observer";
 
 interface CardProps {
@@ -10,15 +11,15 @@ interface CardProps {
 
 function Card({ icon, title, description }: CardProps) {
   return (
-    <div className="p-4 border border-[#7F7F7F1A]">
-      <div className="px-5 py-[34px] bg-[#7F7F7F0D] rounded-[16px] flex flex-col items-center">
-        <div className="w-[66px] h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
+    <div className="p-4 border border-[#7F7F7F1A] h-full">
+      <div className="px-5 py-[34px] bg-[#7F7F7F0D] rounded-[16px] flex flex-col items-center h-full">
+        <div className="w-[56px] h-[56px] md:w-[58px] md:h-[58px] lg:w-[66px] lg:h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
           {icon}
         </div>
-        <h5 className="text-[#111111] font-semibold text-[16px] mb-[4px] text-center">
+        <h5 className="text-[#111111] primary-text text-center font-medium">
           {title}
         </h5>
-        <p className="text-[#11111199] text-[16px] font-normal text-center">
+        <p className="text-[#11111199] primary-text text-center">
           {description}
         </p>
       </div>
@@ -108,34 +109,25 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="w-full bg-gray-50">
+    <section className="w-full bg-gray-50 py-20">
       <div className="max-w-[1176px] w-full mx-auto flex flex-col">
-        {/* Section Header */}
         <div className="text-center pt-16 pb-14 flex flex-col gap-4 items-center w-[80%] md:w-[50%] mx-auto">
-          <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
-            <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-              Benefits
-            </p>
-          </div>
-          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
-            Maximize your investing potential
-          </h2>
-          <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px]">
+          <Tag text="Benefits" />
+          <h2>Maximize your investing potential</h2>
+          <div className="primary-text">
             Discover how Upshift not only simplifies your investment process but
             also empowers you to make smarter, data-driven decisions.
           </div>
         </div>
 
-        {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4">
           {benefits.map((benefit, index) => (
-            <div key={index}>
-              <Card
-                icon={benefit.icon}
-                title={benefit.title}
-                description={benefit.description}
-              />
-            </div>
+            <Card
+              icon={benefit.icon}
+              title={benefit.title}
+              description={benefit.description}
+              key={index}
+            />
           ))}
         </div>
       </div>

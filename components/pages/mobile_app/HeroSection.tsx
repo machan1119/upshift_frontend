@@ -36,11 +36,11 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-50 bg-gradient-to-b from-[#DDEDFA] to-[#FFFFFF00] pt-[180px]">
-      <div className="max-w-[1176px] mx-auto px-[10px] pb-[30px] border-b-[1px] border-b-[#7F7F7F1A]">
-        <div className="z-5 bg-[url('/images/Mobile-App-Hero-BG.webp')] bg-cover bg-center">
-          <div className="flex flex-col gap-12 items-center">
+      <div className="max-w-[1176px] w-full mx-auto px-[10px] pb-[30px] border-b-[1px] border-b-[#7F7F7F1A]">
+        <div className="w-full z-5 bg-[url('/images/Mobile-App-Hero-BG.webp')] bg-cover bg-center">
+          <div className="flex flex-col w-full gap-12 items-center">
             <div
-              className={`flex flex-col gap-4 items-center ${
+              className={`flex flex-col w-full gap-4 items-center ${
                 isVisible ? "animate-fade-in-up" : "opacity-0"
               }`}
             >
@@ -52,13 +52,13 @@ const HeroSection = () => {
                   height={49}
                   className="w-4 h-4"
                 />
-                <h6 className="text-[14px] font-semibold text-[#0086C9]">
+                <h6 className="text-[12px] leading-[14.4px] md:text-[13px] md:leading-[15.6px] lg:text-[14px] lg:leading-[16.8px] font-semibold text-[#0086C9]">
                   Meet Upshift
                 </h6>
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-[40px] text-center md:text-7xl md:leading-[86.4px] font-semibold text-[#111111] w-[90%] pb-6">
+              <h1 className="text-[40px] leading-[48px] text-center md:text-[56px] md:leading-[67.2px] lg:text-[72px] lg:leading-[86.4px] font-semibold text-[#111111] w-[90%] pb-6">
                 Invest with confidence, Grow your future
               </h1>
 
@@ -80,15 +80,15 @@ const HeroSection = () => {
               </div>
 
               {/* Description */}
-              <p className="text-[24px] text-[#111111] font-medium w-[65%] text-center pt-6 pb-8">
+              <p className="text-[19px] leading-[30.4px] md:text-[21px] md:leading-[33.6px] lg:text-[24px] lg:leading-[38.4px] text-[#111111] font-medium w-full md:w-[65%] text-center pt-6 pb-8">
                 Upshift is a gateway to smart investing with real-time market
                 insights and personalized educational support.
               </p>
 
               {/* Email Signup Form */}
-              <div className="max-w-md">
+              <div className="md:max-w-md w-[90%]">
                 <form className="flex flex-col sm:flex-row gap-4">
-                  <div className="flex-1 relative">
+                  <div className="flex-1 relative w-full">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                       <svg
                         className="h-5 w-5 text-gray-400"
@@ -107,7 +107,7 @@ const HeroSection = () => {
                     <input
                       type="email"
                       placeholder="Your email"
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+                      className="w-full text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-start pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
                       required
                     />
                   </div>
@@ -176,7 +176,7 @@ const HeroSection = () => {
                   alt={`Partner Logo ${index + 1}`}
                   width={200}
                   height={200}
-                  className="w-auto object-contain rounded-[66px]"
+                  className="w-auto object-contain rounded-[32px] md:rounded-[44px] lg:rounded-[66px]"
                 />
               </div>
             </SwiperSlide>

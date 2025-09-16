@@ -1,12 +1,12 @@
 export function Ready() {
   return (
     <section className="w-full bg-gray-50 flex flex-col items-center pt-12 pb-6 px-6 border border-b-[#7F7F7F1F]">
-      <div className="rounded-[20px] md:rounded-[56px] bg-dark px-3 md:px-[128px]">
-        <div className="flex flex-col gap-4 items-center pb-5 pt-10 md:py-[120px] bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
-          <h2 className="text-[28px] md:text-[56px] text-white md:leading-[67.2px] tracking-[-1.12px] font-semibold text-center">
+      <div className="rounded-[20px] md:rounded-[56px] bg-dark px-3 lg:px-[128px]">
+        <div className="flex flex-col gap-4 items-center pb-5 pt-10 md:py-[80px] lg:py-[120px] bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
+          <h2 className="text-[28px] leading-[33.6px] md:text-[36px] md:leading-[43.2px] lg:text-[56px] lg:leading-[67.2px] text-white tracking-[-1.12px] font-semibold text-center">
             Ready to start investing?
           </h2>
-          <p className="md:w-[50%] w-[80%] text-[14px] md:text-[16px] leading-[25.6px] pb-2 font-normal text-center text-[#FFFFFF96]">
+          <p className="lg:w-[60%] w-[80%] text-center primary-text text-[#FFFFFF99]">
             Join thousands of successful investors who trust our app to manage
             their investments. Download now and transform your financial future
           </p>

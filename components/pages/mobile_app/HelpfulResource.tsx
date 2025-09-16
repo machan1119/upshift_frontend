@@ -1,3 +1,4 @@
+import Tag from "@/components/ui/Tag";
 import Image from "next/image";
 
 export function HelpfulResource() {
@@ -6,15 +7,9 @@ export function HelpfulResource() {
       <div className="max-w-[1176px] w-full mx-auto flex flex-col gap-10 py-16 md:pt-16 md:pb-0">
         <div className="flex md:flex-row flex-col md:gap-0 gap-5 items-center w-full">
           <div className="md:w-[58%] w-full px-14 flex flex-col items-center md:items-start gap-4">
-            <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
-              <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-                Helpful resources
-              </p>
-            </div>
-            <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-center md:text-start text-4xl md:text-[56px] tracking-[-1.12px]">
-              Education tools to improve your knowledge
-            </h2>
-            <p className="text-[#11111199] text-[16px] font-normal text-center md:text-start leading-[25.6px]">
+            <Tag text="Helpful resources" />
+            <h2>Education tools to improve your knowledge</h2>
+            <p className="primary-text">
               Access over 200 interactive financial education lessons covering a
               broad spectrum of topics from basic investing to advanced
               financial strategies, taught by experts

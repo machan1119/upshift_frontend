@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Tag from "@/components/ui/Tag";
 
 interface TestimonialsType {
   name: string;
@@ -101,17 +102,10 @@ const TestimonialsSection = () => {
   return (
     <section className="w-full bg-gray-50 border border-b-[#7F7F7F1F]">
       <div className="max-w-[1176px] w-full mx-auto flex flex-col pt-16">
-        {/* Section Header */}
         <div className="text-center flex flex-col gap-4 items-center w-full md:w-[60%] mx-auto pb-8">
-          <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
-            <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-              Testimonials
-            </p>
-          </div>
-          <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
-            Hear what our users says
-          </h2>
-          <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px] w-[75%]">
+          <Tag text="Testimonials" />
+          <h2>Hear what our users says</h2>
+          <div className="primary-text">
             Discover how Upshift not only simplifies your investment process but
             also empowers you to make smarter, data-driven decisions.
           </div>

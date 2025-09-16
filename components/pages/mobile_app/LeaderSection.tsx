@@ -19,7 +19,7 @@ export function LeaderSection() {
           <p className="text-[16px] leading-[26px] text-center text-[#11111199] font-normal">
             Trusted by industry leaders
           </p>
-          <div className="flex w-full justify-between my-auto justify-self-end leader-mask animate-fade-in-up">
+          <div className="grid grid-cols-3 lg:grid-cols-6 w-full justify-between my-auto justify-self-end leader-mask animate-fade-in-up">
             {LeaderLogos.map((logo, index) => (
               <Image
                 src={`/images/${logo}`}

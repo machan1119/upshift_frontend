@@ -1,4 +1,4 @@
-import { Helper } from "@/components/Helper";
+import { Helper } from "@/components/ui/Helper";
 import Footer from "@/components/pages/mobile_app/Footer";
 import PagesHeader from "@/components/pages/pages/PagesHeader";
 

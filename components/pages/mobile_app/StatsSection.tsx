@@ -1,5 +1,6 @@
 "use client";
 
+import Tag from "@/components/ui/Tag";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -54,11 +55,11 @@ const Counter = ({
   return (
     <div
       ref={ref}
-      className="relative py-[60px] px-[20px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]"
+      className="relative py-[48px] px-[10px] md:py-[60px] md:px-[20px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]"
     >
-      <div className="text-[32px] font-semibold text-[#11111199] mb-2 justify-self-center flex items-center">
+      <div className="lg:text-[32px] lg:leading-[38.4px] text-[24px] leading-[28.8px] font-semibold text-[#11111199] mb-2 justify-self-center flex items-center">
         {prefix}
-        <span className="text-black text-[48px]">
+        <span className="text-black lg:text-[48px] lg:leading-[48px] text-[38px] leading-[38px]">
           {count.toLocaleString()}
           {unit}
         </span>
@@ -101,28 +102,24 @@ const StatsSection = () => {
       <div className="max-w-[1176px] w-full mx-auto flex flex-col gap-10">
         <div className="flex w-full md:flex-row flex-col gap-5 md:gap-0">
           <div className="md:w-[58%] w-full pt-[56px] md:pl-[64px] md:pr-0 px-12 flex flex-col gap-4">
-            <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
-              <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-                About us
-              </p>
-            </div>
-            <h2 className="text-[#111111] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
+            <Tag text="About us" />
+            <h2>
               Empowering every individual to achieve financial independence
             </h2>
           </div>
           <div className="md:w-[42%] w-full flex flex-col gap-4 justify-end px-12">
-            <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px]">
+            <p className="primary-text">
               Designed for both novice and seasoned investors, our app combines
               powerful technology with user-friendly features to help you manage
               your investments wisely.
-            </div>
-            <div className="text-[#11111199] text-[16px] font-normal leading-[25.6px]">
+            </p>
+            <p className="primary-text">
               Benefit from real-time data, educational resources, and innovative
               investment tools.
-            </div>
+            </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4">
           {stats.map((stat, index) => (
             <div key={index}>
               <Counter

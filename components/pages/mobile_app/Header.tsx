@@ -41,7 +41,7 @@ const Header = () => {
         isScrolled ? "bg-white shadow-lg" : "bg-transparent"
       } ${isScrollDown ? "hidden" : "fixed"}`}
     >
-      <nav className="max-w-[1176px] mx-auto px-[10px]">
+      <nav className="max-w-[1176px] lg:w-full w-[95%] mx-auto px-[10px]">
         <div className="flex items-center justify-between h-24 mx-auto">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -50,12 +50,12 @@ const Header = () => {
               alt="Upshift Logo"
               width={120}
               height={40}
-              className="h-8 w-auto"
+              className="md:h-8 h-6 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
@@ -68,7 +68,7 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden px-4 md:flex items-center justify-center">
+          <div className="hidden px-4 lg:flex items-center justify-center">
             <Link
               href="#"
               className={`w-full ${
@@ -81,7 +81,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle mobile menu"
           >
@@ -107,7 +107,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden transition-all duration-300 overflow-hidden ${
+          className={`lg:hidden transition-all duration-300 overflow-hidden ${
             isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >

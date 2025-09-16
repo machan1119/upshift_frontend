@@ -25,11 +25,18 @@ main::before {
     pointer-events: none;
     z-index: 50;
     min-height: 100%;
+    width: 100%;
     max-width: 1176px;
     border-right: 1px solid #7F7F7F1A;
     background: linear-gradient(to right, #7F7F7F1A 1px, transparent 0);
     background-repeat: repeat-x;
     background-size: calc(100%);
+}
+
+@media (max-width: 1440px) {
+    main::before {
+        width: 95%;
+    }
 }
 
 .state-card::before {
@@ -57,6 +64,14 @@ main::before {
     @apply border rounded-[12px] shadow-[0px_5px_4px_0px_rgba(0,10,31,0.2)] text-white bg-primary hover:bg-secondary font-medium transition-colors duration-200 px-[20.8px] py-[11.2px] leading-[15px];
   }
   
+  h2 {
+    @apply text-[#111111] font-semibold text-[28px] leading-[33.6px] tracking-[-0.56px] md:text-[36px] md:leading-[43.2px] md:tracking-[-0.72px] lg:text-[56px] lg:leading-[67.2px] lg:tracking-[-1.12px]
+  }
+
+  .primary-text {
+    @apply text-[#11111199] text-[14px] font-normal leading-[22.4px] md:text-[15px] md:leading-[24px] lg:text-[16px] lg:leading-[25.6px]
+  }
+
   .animate-on-scroll {
     @apply opacity-0 translate-y-8 transition-all duration-700;
   }
