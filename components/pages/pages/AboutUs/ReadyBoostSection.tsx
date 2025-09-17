@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function ReadyBoostSection() {
   return (
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A]">
-      <div className="max-w-[1176px] mx-auto w-full py-20 flex flex-col items-center gap-4 bg-[url('/images/About-Us-CTA-BG.webp')] bg-contain bg-center">
-        <h2 className="md:w-[45%] w-[80%] text-center text-[26px] md:text-[48px] text-black font-semibold leading-[57.6px] tracking-[-0.96px]">
+      <div className="max-w-[1176px] mx-auto w-full py-10 md:py-20 flex flex-col items-center gap-4 bg-[url('/images/About-Us-CTA-BG.webp')] bg-contain bg-center">
+        <h2 className="md:w-[45%] w-[80%] text-center large-text text-black font-semibold">
           Ready to boost your email marketing?
         </h2>
-        <p className="w-[80%] md:w-[45%] text-center text-[16px] font-normal text-[#11111199] leading-[25.6px] pb-2">
+        <p className="w-[80%] md:w-[45%] primary-text text-center pb-2">
           Join thousands of successful marketers who are reaching their
           audiences more effectively with Upshift. Get started today with a free
           trial!

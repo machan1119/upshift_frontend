@@ -1,15 +1,14 @@
 "use client";
+
+import Tag from "@/components/ui/Tag";
+
 export default function MissionSection() {
   return (
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A]">
-      <div className="max-w-[1176px] w-full mx-auto">
+      <div className="max-w-[1176px] w-[95%] mx-auto">
         <div className="flex flex-col gap-4 border-b-[1px] border-b-[#7F7F7F1A] p-5 md:p-[80px]">
-          <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
-            <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-              Mission
-            </p>
-          </div>
-          <p className="text-[24px] md:text-[48px] font-medium md:leading-[57.6px] text-[#11111199]">
+          <Tag text="Mission" />
+          <p className="large-text">
             <span className="text-black"></span>
             Our mission is to empower businesses to achieve their{" "}
             <span className="text-black">marketing goals</span>
@@ -23,8 +22,8 @@ export default function MissionSection() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row">
-          <div className="relative p-10 md:py-[80px] md:px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
-            <div className="w-[66px] h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
+          <div className="flex flex-col gap-3 relative p-10 md:py-[80px] md:px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
+            <div className="w-[56px] h-[56px] md:w-[58px] md:h-[58px] lg:w-[66px] lg:h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 384 512"
@@ -38,17 +37,15 @@ export default function MissionSection() {
                 />
               </svg>
             </div>
-            <h5 className="text-[#111111] font-semibold text-[16px] mb-[4px] text-start">
-              Innovation
-            </h5>
-            <p className="text-[#11111199] text-[16px] font-normal text-start">
+            <h5>Innovation</h5>
+            <p className="primary-text text-start">
               We push the boundaries of digital marketing technology to bring
               you the most advanced tools, ensuring that you stay ahead of the
               curve in a rapidly evolving market
             </p>
           </div>
-          <div className="relative p-10 md:py-[80px] md:px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
-            <div className="w-[66px] h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
+          <div className="flex flex-col gap-3 relative p-10 md:py-[80px] md:px-[56px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]">
+            <div className="w-[56px] h-[56px] md:w-[58px] md:h-[58px] lg:w-[66px] lg:h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 640"
@@ -62,10 +59,8 @@ export default function MissionSection() {
                 />
               </svg>
             </div>
-            <h5 className="text-[#111111] font-semibold text-[16px] mb-[4px] text-start">
-              Customer success
-            </h5>
-            <p className="text-[#11111199] text-[16px] font-normal text-start">
+            <h5>Customer success</h5>
+            <p className="primary-text text-start">
               We are committed to your success. Our platform is built to drive
               significant results, and our team is here to support you with
               expert advice.

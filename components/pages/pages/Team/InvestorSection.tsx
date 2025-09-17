@@ -1,3 +1,4 @@
+import Tag from "@/components/ui/Tag";
 import Image from "next/image";
 
 interface InvestorsType {
@@ -72,28 +73,26 @@ const Investors: InvestorsType[] = [
 export default function InvestorSection() {
   return (
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A]">
-      <div className="max-w-[1176px] mx-auto md:py-[100px] md:px-[80px] p-10 flex flex-col gap-10">
-        <div className="flex md:flex-row flex-col gap-8 md:gap-[60px] items-center">
-          <div className="flex flex-col md:items-start items-center gap-4 md:p-[20px] justify-center">
-            <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
-              Investors
-            </p>
-            <h2 className="md:text-[48px] text-[26px] md:leading-[57.6px] font-semibold text-black">
+      <div className="max-w-[1176px] w-[95%] mx-auto md:py-[100px] md:px-[80px] p-10 flex flex-col gap-10">
+        <div className="w-full flex md:flex-row flex-col gap-8 md:gap-[60px] items-center">
+          <div className="md:w-[50%] flex flex-col md:items-start items-center gap-4 md:p-[20px] justify-center">
+            <Tag text="Investors" />
+            <h2 className="large-text font-semibold text-black text-center md:text-start">
               Built for the best, backed by the best
             </h2>
-            <p className="text-[14px] md:text-[16px] md:text-start text-center md:leading-[25.6px] text-[#11111199] font-normal">
+            <p className="primary-text text-center md:text-start">
               We are proud to be supported by a distinguished group of investors
               who believe in our mission and share our vision for
               revolutionizing digital marketing.
             </p>
           </div>
-          <div className="min-w-max border border-[#7F7F7F1A] rounded-[18px]">
+          <div className="md:w-[60%] border border-[#7F7F7F1A] rounded-[18px]">
             <Image
               src="/images/Team-Investors-Image.webp"
               width={435}
               height={260}
               alt="Investors hero"
-              className="w-[435px] h-[260px] border-[2px] border-white rounded-[16px]"
+              className="max-w-[435px] w-full aspect-auto border-[2px] border-white rounded-[16px]"
             />
           </div>
         </div>

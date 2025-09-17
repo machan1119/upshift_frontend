@@ -5,13 +5,13 @@ export function EnterprisePlanSection() {
     <section className="w-full bg-gray-50 flex flex-col items-center pt-12 pb-6 px-6 border border-b-[#7F7F7F1F]">
       <div className="w-full rounded-2xl md:rounded-[56px] bg-dark px-10 md:px-[128px]">
         <div className="flex flex-col gap-4 items-center py-10 md:pt-[80px] md:pb-[100px] bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
-          <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-transparent border border-[#7F7F7F1A] w-max">
-            Enterprise Plan
-          </p>
-          <h2 className="md:text-[56px] text-[26px] text-white md:leading-[67.2px] tracking-[-1.12px] font-semibold text-center">
-            Need a custom plan?
-          </h2>
-          <p className="w-full md:w-[50%] text-[14px] md:text-[16px] md:leading-[25.6px] pb-2 font-normal text-center text-[#FFFFFF96]">
+          <div className="w-max border border-[#8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-white">
+            <p className="text-secondary font-medium text-[12px] leading-[14.4px] md:text-[13px] md:leading-[15.6px] lg:text-[14px] lg:leading-[16.8px]">
+              Enterprise Plan
+            </p>
+          </div>
+          <h2 className="text-white">Need a custom plan?</h2>
+          <p className="w-full md:w-[50%] primarty-text text-center text-[#FFFFFF99]">
             For large teams spending over $5m per year, contact us about our
             enterprise product.
           </p>

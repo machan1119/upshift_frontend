@@ -7,14 +7,14 @@ export function PricingSection() {
         <div className="max-w-[1176px] mx-auto md:pb-[80px]">
           <div className="text-center md:pt-[80px] md:pb-[100px] py-10 flex flex-col gap-4 items-center w-[90%] md:w-[60%] mx-auto">
             <div className="w-max border border-[#8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-transparent">
-              <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
+              <p className="text-secondary font-medium text-[12px] leading-[14.4px] md:text-[13px] md:leading-[15.6px] lg:text-[14px] lg:leading-[16.8px]">
                 Pricing
               </p>
             </div>
-            <h2 className="text-[#FFFFFF] font-semibold md:leading-[67.2px] text-[26px] md:text-[56px] tracking-[-1.12px]">
+            <h2 className="large-text text-white font-semibold">
               Choose the plan that fits your business
             </h2>
-            <p className="text-[18px] leading-[28.8px] font-normal text-[#FFFFFF99]">
+            <p className="primary-text text-center text-[#FFFFFF99]">
               Whether you’re just starting out or you’re looking to maximize
               your marketing efforts, we have a plan that fits.
             </p>

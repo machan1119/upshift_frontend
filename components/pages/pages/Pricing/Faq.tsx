@@ -68,7 +68,7 @@ export default function Faq() {
             >
               <button
                 onClick={() => toggleItem(faq.id)}
-                className="w-full text-left font-medium text-black text-base md:text-lg flex items-center justify-between focus:outline-none"
+                className="w-full text-left font-medium text-black headline-text flex items-center justify-between focus:outline-none"
               >
                 {faq.question}
                 <p className="w-5 h-5 text-[#11111199] text-[36px] transition-transform duration-300">
@@ -104,7 +104,7 @@ export default function Faq() {
                     : "max-h-0 opacity-0 pb-0"
                 }`}
               >
-                <div className="text-[#11111199] leading-relaxed text-base">
+                <div className="text-[#11111199] headline-text leading-relaxed">
                   {faq.answer}
                 </div>
               </div>

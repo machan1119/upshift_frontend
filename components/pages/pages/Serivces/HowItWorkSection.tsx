@@ -30,30 +30,27 @@ export function HowItWorkSection() {
     <div className="w-full py-10 bg-gray-50 border-y border-y-[#7F7F7F1A]">
       <div className="mx-[36px] bg-gradient-to-b from-[#28282C] to-[#2E2E34] rounded-[24px] ">
         <div className="max-w-[1176px] mx-auto bg-[url('/images/Mobile-App-How-BG-2.webp')] bg-no-repeat bg-bottom bg-contain">
-          <div className="text-center py-10 md:pt-[80px] md:pb-[100px] px-8 md:px-0 flex flex-col gap-4 items-center md:w-[44%] mx-auto">
+          <div className="text-center py-10 md:pt-[80px] md:pb-[100px] px-8 md:px-0 flex flex-col gap-4 items-center lg:w-[60%] mx-auto">
             <div className="w-max border border-[#8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-transparent">
-              <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
+              <p className="text-secondary font-medium text-[12px] leading-[14.4px] md:text-[13px] md:leading-[15.6px] lg:text-[14px] lg:leading-[16.8px]">
                 How It Works
               </p>
             </div>
-            <h2 className="text-[#FFFFFF] font-semibold md:leading-[67.2px] text-4xl md:text-[56px] tracking-[-1.12px]">
+            <h2 className="large-text text-white">
               Effortless email marketing in four simple steps.
             </h2>
-
             <div className="md:w-[850px] w-auto flex flex-col gap-4 items-center">
               {Steps.map((step, index) => (
                 <div
-                  className="w-full py-[36px] px-[24px] items-center flex gap-6 rounded-[12px] bg-[#313236]"
+                  className="w-full py-[20px] px-[16px] lg:py-[36px] lg:px-[24px] items-center flex gap-6 rounded-[12px] bg-[#313236]"
                   key={index}
                 >
                   <div className="py-[10px] px-4 rounded-full bg-primary border border-secondary text-[24px] leading-[38.4px] text-white font-semibold">
                     {index + 1}
                   </div>
-                  <div className="flex flex-col">
-                    <p className="text-[16px] leading-[25.6px] font-normal text-white">
-                      {step.title}
-                    </p>
-                    <p className="text-[16px] leading-[25.6px] font-normal text-[#FFFFFF99]">
+                  <div className="flex flex-col items-start">
+                    <p className="primary-text text-white">{step.title}</p>
+                    <p className="primary-text text-[#FFFFFF99]">
                       {step.description}
                     </p>
                   </div>

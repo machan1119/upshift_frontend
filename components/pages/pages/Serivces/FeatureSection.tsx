@@ -1,3 +1,4 @@
+import Tag from "@/components/ui/Tag";
 import Image from "next/image";
 
 export default function FeatureSection() {
@@ -5,13 +6,13 @@ export default function FeatureSection() {
     <section className="w-full bg-gray-50">
       <div className="w-full border-b border-b-[#7F7F7F1A]">
         <div className="max-w-[1176px] md:py-[100px] md:pr-[100px] py-10 mx-auto w-full flex md:flex-row items-center flex-col gap-[60px] bg-[url('/images/Services-Features-BG-1.webp')] bg-contain bg-no-repeat bg-left">
-          <div className="ml-[-64px] w-max gap-5 pr-10 items-center hidden lg:flex">
+          <div className="lg:ml-[-64px] w-max gap-5 pr-10 items-center hidden md:flex">
             <Image
               src="/images/Services-Features-Image-2.webp"
               alt="Services-Features-Image-2"
               width={128}
               height={374}
-              className="w-[128px] h-[374px] z-10 shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]  rounded-[8px]"
+              className="max-w-[128px] max-h-[374px] w-[30%] z-10 shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] rounded-[8px]"
               priority
             />
             <Image
@@ -19,20 +20,16 @@ export default function FeatureSection() {
               alt="Services-Features-Image-1"
               width={420}
               height={402}
-              className="w-[420px] h-[402px] z-10 shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)]  rounded-[8px]"
+              className="max-w-[420px] max-h-[402px] w-[85%] z-10 shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)] rounded-[8px]"
               priority
             />
           </div>
           <div className="md:w-[45%] w-[80%] flex flex-col items-center md:items-start gap-4 justify-center">
-            <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
-              <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-                Features
-              </p>
-            </div>
-            <h2 className="text-[#111111] font-semibold text-[26px] md:leading-[57.6px] md:text-[48px] tracking-[-1.12px]">
+            <Tag text="Features" />
+            <h2 className="large-text text-black font-semibold">
               Drag & drop email builder
             </h2>
-            <p className="text-[#11111199] text-[14px] md:text-[16px] font-normal md:leading-[25.6px] text-center md:text-start">
+            <p className="primary-text text-center">
               Craft beautiful, professional emails without any technical skills
               using our intuitive drag-and-drop builder. Choose from hundreds of
               customizable templates to get started quickly.
@@ -58,18 +55,14 @@ export default function FeatureSection() {
           </div>
         </div>
       </div>
-      <div className="w-full border-b border-b-[#7F7F7F1A]">
+      <div className="w-full border-b border-b-[#7F7F7F1A] overflow-hidden">
         <div className="max-w-[1176px] mx-auto w-full flex md:flex-row flex-col justify-between bg-[url('/images/Services-Features-BG-2.webp')] bg-contain bg-no-repeat bg-bottom">
           <div className="md:w-[50%] w-full flex flex-col items-center justify-center gap-4 md:items-start p-10 md:p-20 border-r border-r-[#7F7F7F1A]">
-            <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
-              <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-                Features
-              </p>
-            </div>
-            <h2 className="text-[#111111] font-semibold text-[26px] md:leading-[57.6px] md:text-[48px] tracking-[-1.12px]">
+            <Tag text="Features" />
+            <h2 className="large-text text-black font-semibold">
               Advanced segmentation
             </h2>
-            <p className="text-[#11111199] text-[14px] md:text-[16px] font-normal md:leading-[25.6px] text-center md:text-start">
+            <p className="primary-text text-center">
               Segment your audience based on their behavior, preferences, and
               previous interactions. Deliver highly personalized content that
               resonates and converts.
@@ -105,7 +98,7 @@ export default function FeatureSection() {
       </div>
       <div className="w-full border-b border-b-[#7F7F7F1A]">
         <div className="max-w-[1176px] mx-auto w-full flex md:flex-row flex-col justify-between">
-          <div className="hidden lg:flex px-[40px] py-[90px] w-max gap-5 items-center  bg-[url('/images/Services-Features-BG-3.webp')] bg-contain bg-no-repeat bg-top">
+          <div className="hidden md:flex px-[40px] py-[90px] w-max gap-5 items-center  bg-[url('/images/Services-Features-BG-3.webp')] bg-contain bg-no-repeat bg-top">
             <Image
               src="/images/Services-Features-Image-6.webp"
               alt="Services-Features-Image-6"
@@ -116,15 +109,11 @@ export default function FeatureSection() {
             />
           </div>
           <div className="md:w-[55%] w-full flex flex-col items-center md:items-start gap-4 justify-center p-10 md:p-20">
-            <div className="w-max border border-[8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)]">
-              <p className="text-secondary font-medium text-[14px] leading-[16.8px]">
-                Features
-              </p>
-            </div>
-            <h2 className="text-[#111111] font-semibold text-[26px] md:leading-[57.6px] md:text-[48px] tracking-[-1.12px]">
+            <Tag text="Features" />
+            <h2 className="large-text text-black font-semibold">
               AI workflow builder
             </h2>
-            <p className="text-[#11111199] text-[14px] md:text-[16px] font-normal md:leading-[25.6px] text-center md:text-start">
+            <p className="primary-text text-center">
               Automate your email campaigns, follow-ups, and customer journey
               communications. Set triggers based on user actions or schedules to
               ensure timely and relevant engagement without manual effort

@@ -76,41 +76,42 @@ const Counter = ({
 
   return (
     <div ref={ref} className="relative text-center">
-      <div className="text-[32px] md:text-[48px] leading-[48px] font-semibold text-[#B9E6FE] justify-self-center flex items-center">
+      <div className="lg:text-[48px] lg:leading-[48px] text-[38px] leading-[38px] font-semibold text-[#B9E6FE] justify-self-center flex items-center">
         <span className="mb-[20px]">{count.toLocaleString()}</span>
-        <span className="text-[#B9E6FE] text-[21px] md:text-[32px] leading-[32px]">
+        <span className="text-[#B9E6FE] lg:text-[32px] lg:leading-[38.4px] text-[24px] leading-[28.8px]">
           {unit}
         </span>
-        <span className="text-[#36BFFA] text-[21px] md:text-[32px] leading-[32px] mb-[20px]">
+        <span className="text-[#36BFFA] lg:text-[32px] lg:leading-[38.4px] text-[24px] leading-[28.8px] mb-[20px]">
           {suffix}
         </span>
       </div>
-      <div className="text-[#FFFFFF99] text-[14px] md:text-[16px] font-medium">
-        {label}
-      </div>
+      <div className="text-[#FFFFFF99] primary-text">{label}</div>
     </div>
   );
 };
 
 export function StatsSection() {
   return (
-    <section className="w-full bg-gray-50 flex flex-col items-center pt-8 md:pt-12 pb-6 px-6 border border-b-[#7F7F7F1F]">
-      <div className="rounded-[56px] bg-dark px-[40px] md:px-[128px]">
+    <section className="w-full bg-gray-50 flex flex-col items-center pt-8 lg:pt-12 pb-6 px-6 border border-b-[#7F7F7F1F]">
+      <div className="rounded-[56px] bg-dark px-[40px] lg:px-[128px] w-full">
         <div className="w-full flex items-center bg-[url('/images/Mobile-App-CTA-BG.webp')] bg-center bg-cover">
-          <div className="max-w-[1176px] mx-auto flex md:flow-row flex-col items-center">
-            <div className="animation-fade-in-top w-full md:w-[50%] md:pl-[80px] md:pr-[40px] flex flex-col md:items-start items-center mx-3 pt-[40px] md:py-[120px] gap-4">
-              <p className="w-max rounded-full py-1 px-2 text-primary text-[12px] md:text-[16px] border border-[#FFFFFF99] bg-transparent">
-                Stats
-              </p>
-              <h1 className="text-[26px] md:text-[48px] font-semibold tracking-[-1.28px] md:leading-[57.6px] text-white">
+          <div className="max-w-[1176px] mx-auto flex lg:flex-row flex-col items-center">
+            <div className="animation-fade-in-top w-full lg:w-[50%] lg:pl-[80px] lg:pr-[40px] flex flex-col lg:items-start items-center mx-3 pt-[40px] lg:py-[120px] gap-4">
+              <div className="w-max border border-[#8181812E] rounded-full px-[12px] py-[6px] shadow-[0px_2px_4px_0px_rgba(0,10,31,0.2)] bg-transparent">
+                <p className="text-secondary font-medium text-[12px] leading-[14.4px] md:text-[13px] md:leading-[15.6px] lg:text-[14px] lg:leading-[16.8px]">
+                  Stats
+                </p>
+              </div>
+              <h2 className="text-white text-center lg:text-start">
                 Our impact and reach over the years
-              </h1>
-              <p className="text-center md:text-start text-[14px] md:text-[18px] md:leading-[28.8px] font-normal text-[#FFFFFF99]">
-                We started with a vision to democratize digital marketing,
-                making it accessible and effective for businesses of all sizes.
+              </h2>
+              <p className="primary-text text-[#FFFFFF99] text-center lg:text-start">
+                Our platform is continuously improved to provide cutting-edge
+                tools that are easy to use, ensuring that even those new to
+                digital marketing can see immediate benefits.
               </p>
             </div>
-            <div className="md:py-[120px] py-8 md:pr-[24px] flex flex-col gap-10">
+            <div className="lg:py-[120px] py-8 lg:pr-[24px] flex flex-col gap-10">
               <div className="grid grid-cols-2 gap-0 md:gap-5">
                 {stats.map((state, index) => (
                   <Counter

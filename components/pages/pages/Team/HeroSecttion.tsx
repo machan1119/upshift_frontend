@@ -102,11 +102,11 @@ const HeroSection = () => {
                 className="absolute top-0 min-w-24 min-h-24 z-10"
               />
             </div>
-            <h1 className="animation-fade-in-top text-center text-[40px] md:text-[64px] font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
+            <h1 className="animation-fade-in-top">
               Meet the innovators behind Upshift
             </h1>
             <div className="animation-fade-in-top flex flex-col gap-[18px] w-[90%] md:w-[60%] text-center">
-              <p className="text-[16px] md:text-[18px] md:leading-[28.8px] font-normal text-[#11111199]">
+              <p className="headline-text">
                 Behind every great product is a great team. The Upshift team
                 comprises industry experts, innovative thinkers, and dedicated
                 professionals committed to revolutionizing the way businesses
@@ -121,13 +121,11 @@ const HeroSection = () => {
               key={index}
               className="flex flex-col items-center hover:bg-white relative py-[64px] px-[24px] text-center bg-[url('/images/Mobile-App-About-BG.webp')] bg-[position:50%_3%] bg-[length:95%_auto] bg-no-repeat state-card border border-[#7F7F7F1A]"
             >
-              <div className="w-[66px] h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
+              <div className="w-[56px] h-[56px] md:w-[58px] md:h-[58px] lg:w-[66px] lg:h-[66px] mb-[24px] bg-[url('/images/Mobile-App-Benefits-BG.webp')] bg-no-repeat bg-cover flex justify-center items-center">
                 {feature.icon}
               </div>
-              <h5 className="text-[#111111] font-semibold text-[16px] mb-[4px] text-center">
-                {feature.title}
-              </h5>
-              <p className="text-[#11111199] text-center text-[16px] font-normal">
+              <h5>{feature.title}</h5>
+              <p className="primary-text text-center pt-3">
                 {feature.description}
               </p>
             </div>

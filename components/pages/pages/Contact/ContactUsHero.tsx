@@ -1,3 +1,4 @@
+import Tag from "@/components/ui/Tag";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,14 +7,10 @@ export default function ContactUsHero() {
     <section className="w-full bg-gray-50 border-b-[1px] border-b-[#7F7F7F1A] bg-gradient-to-b from-[#DDEDFA] to-[#FFFFFF00]">
       <div className="max-w-[1176px] mx-auto md:py-[192px] py-[100px] px-5 md:px-[60px] flex flex-col gap-10 bg-[url('/images/Contact-Hero-BG.webp')] bg-right bg-[700px_auto] bg-no-repeat">
         <div className="w-full flex md:flex-row flex-col gap-[60px] items-center">
-          <div className="flex flex-col gap-4 p-[20px] justify-center">
-            <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
-              Contact Us
-            </p>
-            <h2 className="md:text-[64px] text-[38px] md:leading-[76.8px] font-semibold text-black">
-              Let’s talk
-            </h2>
-            <p className="text-[16px] md:text-[18px] md:leading-[28.8px] text-[#11111199] font-normal">
+          <div className="md:w-[50%] flex flex-col gap-4 p-[20px] justify-center">
+            <Tag text="Contact Us" />
+            <h1 className="text-start">Let’s talk</h1>
+            <p className="headline-text">
               We’d love to hear from you! Please fill out the form or reach us
               through the following methods.
             </p>
@@ -73,58 +70,58 @@ export default function ContactUsHero() {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <p className="text-[18px] leading-[28.8px] text-[#11111199] font-normal">
                 Trusted by industry leaders
               </p>
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-4 items-center w-full">
                 <Image
                   src="/images/Contact-Hero-Image-1.webp"
                   width={290}
                   height={72}
                   alt="Leaders Logo"
-                  className="w-[145px] h-[36px] opacity-75 hover:opacity-100"
+                  className="max-w-[145px] w-[30%] aspect-auto opacity-75 hover:opacity-100"
                 />
                 <Image
                   src="/images/Contact-Hero-Image-2.webp"
                   width={290}
                   height={72}
                   alt="Leaders Logo"
-                  className="w-[145px] h-[36px] opacity-75 hover:opacity-100"
+                  className="max-w-[145px] w-[30%] aspect-auto opacity-75 hover:opacity-100"
                 />
                 <Image
                   src="/images/Contact-Hero-Image-3.webp"
                   width={290}
                   height={72}
                   alt="Leaders Logo"
-                  className="w-[145px] h-[36px] opacity-75 hover:opacity-100"
+                  className="max-w-[145px] w-[30%] aspect-auto opacity-75 hover:opacity-100"
                 />
               </div>
             </div>
           </div>
-          <div className="min-w-max border border-[#7F7F7F1A] rounded-[18px] p-6 bg-white flex flex-col gap-4 shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)]">
+          <div className="md:w-[50%] w-[90%] border border-[#7F7F7F1A] rounded-[18px] p-6 bg-white flex flex-col gap-4 shadow-[0px_0px_0px_1px_rgba(127,127,127,0.1)]">
             <input
               type="text"
               name="form_name"
               placeholder="Your name"
-              className="w-[384px] p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
+              className="lg:w-[384px] w-full p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
             />
             <input
               type="text"
               name="form_email"
               placeholder="Your email"
-              className="w-[384px] p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
+              className="lg:w-[384px] w-full p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
             />
             <input
               type="text"
               name="form_subject"
               placeholder="Subject"
-              className="w-[384px] p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
+              className="lg:w-[384px] w-full p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
             />
             <textarea
               name="form_message"
               placeholder="Message"
-              className="w-[384px] h-[146px] p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
+              className="lg:w-[384px] w-full h-[146px] p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
             />
             <div className="hidden md:flex items-center justify-center">
               <Link

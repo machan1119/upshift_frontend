@@ -1,5 +1,6 @@
 "use client";
 
+import Tag from "@/components/ui/Tag";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -8,21 +9,17 @@ const HeroSection = () => {
       <div className="max-w-[1176px] mx-auto px-[10px]">
         <div className="z-[2] pb-10 md:pb-[72px] bg-[800px_auto]">
           <div className="flex flex-col gap-4 items-center mt-5 md:mt-18">
-            <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
-              Enterprise Plan
-            </p>
-            <h1 className="w-[80%] md:text-[64px] text-[38px] text-center font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
-              Get a custom quote
-            </h1>
+            <Tag text="Enterprise Plan" />
+            <h1 className="w-[80%] text-black">Get a custom quote</h1>
             <div className="flex flex-col gap-[18px] w-[80%] text-center">
-              <p className="md:text-[18px] text-[16px] md:leading-[28.8px] font-normal text-[#11111199]">
+              <p className="headline-text">
                 Interested in our marketing tools? Fill out the form below to
                 get a customized enterprise plan quote.
               </p>
             </div>
           </div>
         </div>
-        <div className="md:w-[85%] w-[95%] mb-[72px] mx-auto border border-[#7F7F7F1A] rounded-[18px] p-6 bg-white flex flex-col gap-5">
+        <div className="md:w-[70%] w-[95%] mb-[72px] mx-auto border border-[#7F7F7F1A] rounded-[18px] p-6 bg-white flex flex-col gap-5">
           <div className="flex gap-4">
             <input
               type="text"
@@ -73,7 +70,7 @@ const HeroSection = () => {
             placeholder="Additional detail"
             className="w-full h-[160px] p-3 rounded-[8px] border border-[#7F7F7F1A] text-[14px] text-black"
           />
-          <div className="hidden md:flex items-center justify-center">
+          <div className="flex items-center justify-center">
             <Link
               href="#"
               className={`w-full text-center text-[16px] leading-[16px] font-medium shadow-[0_2px_4px_0_rgba(0,10,31,0.2),_inset_0_6px_3px_-1px_rgba(255,255,255,0.2)] bg-primary px-[20.8px] py-[11.2px] rounded-[12px] text-white`}

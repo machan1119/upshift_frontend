@@ -1,5 +1,6 @@
 "use client";
 
+import Tag from "@/components/ui/Tag";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -8,14 +9,12 @@ const HeroSection = () => {
       <div className="max-w-[1176px] mx-auto px-[10px] border-b-[1px] border-b-[#7F7F7F1A]">
         <div className="z-[2] bg-[url('/images/About-Us-Hero-BG.webp')] pb-[30px] bg-[800px_auto] bg-top bg-no-repeat border-b-[1px] border-b-[#7F7F7F1A]">
           <div className="flex flex-col gap-4 items-center mt-18">
-            <p className="px-2 py-1 rounded-full text-primary text-[14px] leading-[16.8px] font-medium bg-white border border-[#7F7F7F1A] w-max">
-              Pricing
-            </p>
-            <h1 className="animation-fade-in-top text-center text-[40px] md:text-[64px] font-semibold tracking-[-1.28px] md:leading-[76.8px] text-black">
+            <Tag text="Pricing" />
+            <h1 className="animation-fade-in-top">
               Choose the plan that fits your business
             </h1>
             <div className="flex flex-col gap-[18px] w-[90%] md:w-[60%] text-center">
-              <p className="text-[16px] md:text-[18px] md:leading-[28.8px] font-normal text-[#11111199]">
+              <p className="headline-text">
                 Behind every great product is a great team. The Upshift team
                 comprises industry experts, innovative thinkers, and dedicated
                 professionals committed to revolutionizing the way businesses
